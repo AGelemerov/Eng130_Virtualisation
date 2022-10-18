@@ -32,13 +32,10 @@ Common commands:
      version         prints current and latest Vagrant version
      winrm           executes commands on a machine via WinRM
      winrm-config    outputs WinRM configuration to connect to the machine
-
 - Confirm if you have internet in VM
     `sudo apt-get update`
-
 - Run upgrade
     `sudo apt-get upgrade -y`
-
 - Where am I `pwd` gives current location
 - Whoami `uname` or `uname -a`
 - How to create a file in linux `touch filename`
@@ -49,3 +46,30 @@ Common commands:
 - how to navigate back `cd ..` for once, `cd` for all
 - How to delete a file/folder `rm -rf file/foldername` - force
 - Copy file from 1 location to another `cp sourcefile destination`
+- How to navigate between OS and VM
+  - To exit VM, `exit`
+- For Admin access we can use `sudo`
+  - To switch to admin mode `sudo su` su - super user
+- To change permissions of a file `chmod instruction filename`
+  - To allow all access `chmod 700 test.txt` (700 allows all)
+  - To make executable `+x`
+- Open task manager `top` or `ps aux` (close with "x" or Ctrl + C)
+- To remove any process `kill PID` - `kill 7`
+- How to delte folder/hidden folder `ls -a`
+- Print the first 3 lines from the test.txt
+- Print the last 3 lines from the test.txt
+  - `tail -n amount filename`
+- Print the first 10 lines from the test.txt
+  - `head -n amount filename`
+- Research how to use `|` - pipe sign and `grep` and `sort`
+  - pipe `|` - takes output of one command and use it as input for another
+  - `grep` - searching for string/character in the specified file
+    - `grep string filename`
+  - `sort` - sorts filename by a given key with an additional option
+    - `sort filename` - sorts alphabetically
+    - `sort filename > output.txt` - sorts alphabetically and outputs to output file
+      - or use option -o `sort -o filename output.txt`
+    - `sort -r filename` - reverse order
+- `ps aux` sort list by name
+- How to create/run a process in the background & foreground, create/run a process in both areas
+- Kill the process that you created
