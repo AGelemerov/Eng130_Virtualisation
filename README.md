@@ -32,6 +32,7 @@ Common commands:
      version         prints current and latest Vagrant version
      winrm           executes commands on a machine via WinRM
      winrm-config    outputs WinRM configuration to connect to the machine
+
 - Confirm if you have internet in VM
     `sudo apt-get update`
 - Run upgrade
@@ -74,10 +75,36 @@ Common commands:
 - How to create/run a process in the background & foreground, create/run a process in both areas
 - Kill the process that you created
 
-
 - Install `nginx` in our VM
 - Create a `private-network` between localhost and VM
-- Allocate IP address 
+- Allocate IP address
 - `sudo apt-get install nginx -y`
 - How to check a tool/ software status in Linux
   - `sudo systemctl status nginx`
+
+## What is virtualisation & benefits of it
+
+Virtualization is the process of running a virtual instance of a computer system in a layer separate from the actual hardware. It is often inefficient and costly for organizations to deploy multiple servers to keep pace with their storage and processing needs.
+
+### Benefits
+
+- Reduced upfront hardware and continuing operating costs
+- Minimized or eliminated downtime
+- Increased IT productivity and responsiveness
+- Greater business continuity and disaster recovery response
+- Simplified data center management
+- Faster provisioning of applications and resources
+
+## What is Development Environment
+
+A development environment in software and web development is a workspace for developers to make changes without breaking anything in a live environment.
+
+## What is Vagrant
+
+Tool for working with virtual environments, and in most circumstances, this means working with virtual machines. Vagrant provides a simple and easy to use command-line client for managing these environments, and an interpreter for the text-based definitions of what each environment looks like, called Vagrantfiles. Vagrant is open source, which means that anyone can download it, modify it, and share it freely.
+
+## What is Virtual Box
+
+VirtualBox is open-source software for virtualizing the x86 computing architecture. It acts as a hypervisor, creating a VM (virtual machine) where the user can run another OS (operating system).
+
+## Why should we use them all
