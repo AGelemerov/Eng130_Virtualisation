@@ -73,3 +73,11 @@ Common commands:
 - `ps aux` sort list by name
 - How to create/run a process in the background & foreground, create/run a process in both areas
 - Kill the process that you created
+
+
+- Install `nginx` in our VM
+- Create a `private-network` between localhost and VM
+- Allocate IP address 
+- `sudo apt-get install nginx -y`
+- How to check a tool/ software status in Linux
+  - `sudo systemctl status nginx`
