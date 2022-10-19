@@ -1,5 +1,5 @@
-Usage: vagrant [options] <command> [<args>]
-
+`Usage: vagrant [options] <command> [<args>]`
+```bash
     -v, --version                    Print the version and exit.
     -h, --help                       Print this help.
 
@@ -32,7 +32,7 @@ Common commands:
      version         prints current and latest Vagrant version
      winrm           executes commands on a machine via WinRM
      winrm-config    outputs WinRM configuration to connect to the machine
-
+```
 - Confirm if you have internet in VM
     `sudo apt-get update`
 - Run upgrade
