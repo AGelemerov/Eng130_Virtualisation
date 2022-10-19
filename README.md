@@ -1,4 +1,7 @@
-```bash
+##
+
+```markdown
+
 Usage: vagrant [options] <command> [<args>]
 
     -v, --version                    Print the version and exit.
@@ -34,6 +37,7 @@ Common commands:
      winrm           executes commands on a machine via WinRM
      winrm-config    outputs WinRM configuration to connect to the machine
 ```
+
 - Confirm if you have internet in VM
     `sudo apt-get update`
 - Run upgrade
@@ -106,8 +110,23 @@ A development environment in software and web development is a workspace for dev
 
 Tool for working with virtual environments, and in most circumstances, this means working with virtual machines. Vagrant provides a simple and easy to use command-line client for managing these environments, and an interpreter for the text-based definitions of what each environment looks like, called Vagrantfiles. Vagrant is open source, which means that anyone can download it, modify it, and share it freely.
 
-## What is Virtual Box
+## What is Virtual Box / ##
 
 VirtualBox is open-source software for virtualizing the x86 computing architecture. It acts as a hypervisor, creating a VM (virtual machine) where the user can run another OS (operating system).
 
-## Why should we use them all
+## Why should we use them all / ##
+
+bhrfuoipo
+
+# Bash Scripting / #
+
+`#!/bin/bash` - must be first line in file
+
+# Syncing folder between localhost and VM
+
+Enter Vagrantfile, type following command
+
+- 1st param - host folder with root folder being the folder itself
+- 2nd param - vm folder, absolute path required (if you are only moving a folder don't specify the name of it here )
+
+ `config.vm.synced_folder "./folder_you_want_to_sync", "/home/vagrant/foldername"`
