@@ -1,4 +1,4 @@
-##
+# Virtualisation / #
 
 ```markdown
 
@@ -87,13 +87,13 @@ Common commands:
 - How to check a tool/ software status in Linux
   - `sudo systemctl status nginx`
 
-## What is virtualisation & benefits of it
+## What is virtualisation & benefits of it / ##
 
 ![Diagram](images/vagrant.png)
 
 Virtualization is the process of running a virtual instance of a computer system in a layer separate from the actual hardware. It is often inefficient and costly for organizations to deploy multiple servers to keep pace with their storage and processing needs.
 
-### Benefits
+### Benefits / ###
 
 - Reduced upfront hardware and continuing operating costs
 - Minimized or eliminated downtime
@@ -102,11 +102,11 @@ Virtualization is the process of running a virtual instance of a computer system
 - Simplified data center management
 - Faster provisioning of applications and resources
 
-## What is Development Environment
+## What is Development Environment / ##
 
 A development environment in software and web development is a workspace for developers to make changes without breaking anything in a live environment.
 
-## What is Vagrant
+## What is Vagrant / ##
 
 Tool for working with virtual environments, and in most circumstances, this means working with virtual machines. Vagrant provides a simple and easy to use command-line client for managing these environments, and an interpreter for the text-based definitions of what each environment looks like, called Vagrantfiles. Vagrant is open source, which means that anyone can download it, modify it, and share it freely.
 
@@ -163,5 +163,3 @@ sudo apt-get install nginx -y
 sudo systemctl start nginx
 
 ```
-
-
