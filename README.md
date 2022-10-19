@@ -1,5 +1,6 @@
-`Usage: vagrant [options] <command> [<args>]`
 ```bash
+Usage: vagrant [options] <command> [<args>]
+
     -v, --version                    Print the version and exit.
     -h, --help                       Print this help.
 
