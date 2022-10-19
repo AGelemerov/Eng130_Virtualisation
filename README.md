@@ -122,7 +122,7 @@ bhrfuoipo
 
 `#!/bin/bash` - must be first line in file
 
-# Syncing folder between localhost and VM
+# Syncing folder between localhost and VM / #
 
 Enter Vagrantfile, type following command
 
@@ -130,3 +130,10 @@ Enter Vagrantfile, type following command
 - 2nd param - vm folder, absolute path required (if you are only moving a folder don't specify the name of it here )
 
  `config.vm.synced_folder "./folder_you_want_to_sync", "/home/vagrant/foldername"`
+
+```markdown
+NOTE:
+Should automatically sync, but if not, reload vagrant
+```
+
+`ufw` - open/close ports
