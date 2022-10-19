@@ -86,6 +86,7 @@ Common commands:
 ## What is virtualisation & benefits of it
 
 ![Diagram](images/vagrant.png)
+
 Virtualization is the process of running a virtual instance of a computer system in a layer separate from the actual hardware. It is often inefficient and costly for organizations to deploy multiple servers to keep pace with their storage and processing needs.
 
 ### Benefits
