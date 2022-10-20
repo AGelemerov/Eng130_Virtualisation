@@ -163,3 +163,60 @@ sudo apt-get install nginx -y
 sudo systemctl start nginx
 
 ```
+
+## Linux Environment Variable / ##
+
+- helps us abstract information
+- hide information
+
+- syntax - NAME=ANGEL
+- How to check existing environment variables `env`
+- `export` to create env var
+- `printenv` to print out the environment variable
+
+## How to set persistent env var / ##
+
+### For single current user / ###
+
+`sudo nano ~/.bashrc`
+
+- use `export [env_var_name]=[value]` inside file
+- to update the file do `source ~/.bashrc`
+
+### For all users / ###
+
+`sudo nano /etc/profile.d/[filename].sh`
+
+- use `export [env_var_name]=[value]` inside file
+
+## Linking APP and DB / ##
+
+1. create 2 VMs
+   1. set up app in app machine
+   2. install mongodb in db machine
+2. install required version of mongodb with valid key
+3. ensure it is running
+   1. change mongod.conf file to allow access to everyone
+4. restart mongodb `sudo systemctl restart mongodb`
+5. enable with same command
+6. check status to make sure it is runnind with new config
+   1. cat mongod.conf
+7. back to app machine
+8. create env var called `"export DB_HOST=mongodb://192.168.10.150:27017/posts"`
+
+## MongoDB setup / ##
+
+be careful of these keys, they will go out of date
+`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927`
+`echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list`
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
+comment -> `sudo apt-get install mongodb-org=3.2.20 -y`
+
+`sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20`
+
+- run `sudo nano /etc/mongod.conf`
+- change ip to whatever needed
+- restart mongod `sudo systemctl restart mongod`
